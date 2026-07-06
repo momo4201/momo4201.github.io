@@ -19,4 +19,6 @@ See [DEPLOYMENT.md](DEPLOYMENT.md) for the full step-by-step terminal and GitHub
 
 All content lives directly in `index.html` — each section is marked with an HTML comment (e.g. `<!-- ===== Publications ===== -->`). To add a publication, copy an existing `<li class="pub">` block and edit the text. Status badges: `badge--review`, `badge--accepted`, `badge--published`.
 
+To add a blog-style activity post (seminars, workshops, conferences), copy an `<article class="post">` block in the **Activities** section and edit the date, location, title, and body. Keep the newest post at the top.
+
 The `components/` folder contains the original section fragments used to assemble `index.html`; it is not loaded by the site and can be deleted.
