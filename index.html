@@ -39,7 +39,9 @@
           <li><a href="#experience">Research</a></li>
           <li><a href="#education">Education</a></li>
           <li><a href="#projects">Projects</a></li>
-          <li><a href="#activities">Activities</a></li>
+          <li><a href="#activities">Leadership and Activities</a></li>
+          <!-- <li><a href="#blog">Blog</a></li> -->
+          <!-- <li><a href="#events">Events</a></li> -->
           <li><a href="#skills">Skills</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
@@ -55,7 +57,9 @@
 
     <!-- ================= Author Sidebar ================= -->
     <aside class="sidebar">
-      <div class="author-avatar" aria-hidden="true">MG</div>
+      <div class="author-avatar">
+        <img src="images/manaswita.png" alt="Portrait of Manaswita Ghose">
+      </div>
       <h2 class="author-name">Manaswita Ghose</h2>
       <p class="author-bio">B.Tech. Final Year, Biomedical Engineering — Dept. of Biotechnology and Medical Engineering, NIT Rourkela</p>
       <ul class="author-urls">
@@ -72,8 +76,9 @@
       <!-- ================= About ================= -->
       <section id="about" class="page-section">
         <h2 class="section-title">About Me</h2>
-        <p>I am a final-year B.Tech. student in Biomedical Engineering at the Department of Biotechnology and Medical Engineering, NIT Rourkela. I am currently a TEEP Research Intern at Prof. Kang-Ming Chang's Lab, National Kaohsiung University of Science and Technology, Taiwan, where I work on nonlinear EEG–ECG interdependence analysis for sleep staging.</p>
-        <p>Previously, at the Intelligent Biosensing and Microsystems Lab, NIT Rourkela, I worked on EEG visual-perception experiments, interstitial glucose dynamics during physical activity, and computational analysis of hypertension-associated clinical variables. My research has led to publications under review and accepted at IEEE venues, and I am the founder and vice president of the IEEE EMBS Student Branch Chapter at NIT Rourkela.</p>
+        <p>I am a final-year student of Biomedical Engineering working on signal processing and Machine Learning to analyze, model and interpret neural and physiological signals.</p>
+        <p>I'm interested in EEG and brain computer interfaces, biosensors, instrumentation, neuroprosthetics and the application of AI/ML in healthcare. My current research work covers EEG and ECG based sleep staging and deep learning based lung sound classification for pulmonary disease screening. Currenty, I'm working on the modelling of human attention mechanisms during visual perception. </p>
+        <p>Outside academic activities, I enjoy reading the random facts about arts, nature, human psychology, science and exploring new ideas. I also love playing table tennis during my free time. I recently founded the IEEE EMBS Student Chapter at NIT Rourkela and currently serve as its Chapter Chair.  </p>
         <h3 class="subsection-title">Research Interests</h3>
         <div class="tags">
           <span class="tag">Biomedical signal processing (EEG/ECG) with deep learning</span>
@@ -84,6 +89,7 @@
       </section>
 
       <!-- ================= Publications ================= -->
+
       <section id="publications" class="page-section">
         <h2 class="section-title">Publications</h2>
 
@@ -97,10 +103,16 @@
             </li>
           </ol>
         </div>
-
+        
         <div class="pub-group">
           <h3 class="subsection-title">Conference Papers</h3>
           <ol class="pub-list" start="2">
+            <li class="pub">
+              <p class="pub-title">Attention-Guided Selective-Kernel Encoder for Cost-Efficient EEG-to-Image Generation</p>
+              <p class="pub-authors"><strong>Manaswita Ghose</strong>, A. Dash, S. Abdullah, B. Mirza</p>
+              <p class="pub-venue"><em>IEEE CMES 2027, IIT Guwahati</em>, 2026 <span class="badge badge--accepted">Submitted</span></p>
+            </li>
+
             <li class="pub">
               <p class="pub-title">Subject-Aware Multimodal Glucose Forecasting with Channel-Temporal Attention and Iterative Residual Refinement</p>
               <p class="pub-authors">A. Dash, <strong>Manaswita Ghose</strong>, T. Shirke, D. Kalita, K. B. Mirza</p>
@@ -110,10 +122,10 @@
         </div>
 
         <div class="pub-group">
-          <h3 class="subsection-title">Conference Abstracts &amp; Presentations</h3>
-          <ol class="pub-list" start="3">
+          <h3 class="subsection-title">Abstracts &amp; Presentations</h3>
+          <ol class="pub-list" start="4">
             <li class="pub">
-              <p class="pub-title">Community-Based Assessment of Hypertension Risk in Patients with Diabetes: A Rural Community in Odisha</p>
+              <p class="pub-title">Community-Based Assessment of Hypertension Risk in Patients with Diabetes: Study Among A Rural Community Residing in Odisha</p>
               <p class="pub-authors">S. Mohanty, <strong>Manaswita Ghose</strong>, K. B. Mirza</p>
               <p class="pub-venue"><em>International Journal of Diabetes and Technology</em>, vol. 5, suppl. 3, p. S98, 2026 <span class="badge badge--published">Published</span></p>
             </li>
@@ -132,18 +144,32 @@
         <div class="timeline">
           <div class="timeline-item">
             <span class="timeline-date">May 2026 – Present</span>
-            <h3 class="timeline-title">Nonlinear EEG–ECG Interdependence Analysis for Sleep Staging</h3>
+            <h3 class="timeline-title">Nonlinear EEG–ECG Interdependence Analysis for Sleep Stage Classification</h3>
             <p class="timeline-meta">TEEP Research Intern · Prof. Kang-Ming Chang's Lab, National Kaohsiung University of Science and Technology, Taiwan</p>
             <ul>
               <li>Designing a nonlinear signal-interdependence framework to classify sleep stages from synchronized EEG–ECG recordings (MIT-BIH Polysomnographic Database).</li>
             </ul>
+
+          </div>
+          <div class="timeline-item">
+            <span class="timeline-date">May – July 2026</span>
+            <h3 class="timeline-title">Deep Learning Based Multiclass Lung Sound Classification System For Community-Deployable Pulmonary Screening</h3>
+            <p class="timeline-meta">ML intern · Stethaim Private Limited</p>
+            <ul>
+              <li>Built a subject-independent mel-spectrogram classification pipeline (resampling, DFT-based baseline-wander removal, augmentation) from pooled multiclass lung-sound datasets.</li>
+              <li>Designed and benchmarked lightweight depthwise-separable CNN architectures against a heavier EfficientNetV2-based backbone.</li>
+              <li>validated model attention with Grad-CAM against known respiratory pathophysiology.</li>
+            </ul>
+
           </div>
           <div class="timeline-item">
             <span class="timeline-date">Feb – Apr 2026</span>
             <h3 class="timeline-title">Computational Analysis of Hypertension-Associated Clinical Variables</h3>
             <p class="timeline-meta">Research Assistant · Intelligent Biosensing and Microsystems Lab, NIT Rourkela</p>
             <ul>
-              <li>Performed statistical association analysis between physiological/demographic variables and hypertension using non-parametric tests and correlation analysis.</li>
+              <li>Digitalized and structured raw clinical dataset for computational analysis.</li>
+              <li>Performed exploratory data analysis (EDA) to identify trends, distributions, and data quality issues across physiological/demographic variables.</li>
+              <li>Conducted statistical association analysis between physiological/demographic variables and hypertension using non-parametric tests and correlation analysis.</li>
             </ul>
           </div>
           <div class="timeline-item">
@@ -159,7 +185,9 @@
             <h3 class="timeline-title">Analysis of Interstitial Glucose Dynamics During Physical Activity</h3>
             <p class="timeline-meta">Research Intern · Intelligent Biosensing and Microsystems Lab, NIT Rourkela</p>
             <ul>
-              <li>Analyzed physiological time-series (interstitial glucose, heart rate) in Python to study glucose dynamics under exercise-induced responses.</li>
+              <li>Collected and preprocessed multimodal physiological data (EMG, heart rate, breathing rate, glucose) from subjects during structured exercise sessions.</li>
+              <li>Analyzed physiological time-series data in Python to study glucose dynamics under exercise-induced responses.</li>
+        
             </ul>
           </div>
           <div class="timeline-item">
@@ -167,7 +195,8 @@
             <h3 class="timeline-title">Visual Stimuli Mental Imagery Experiment Using EEG</h3>
             <p class="timeline-meta">Research Assistant · Intelligent Biosensing and Microsystems Lab, NIT Rourkela</p>
             <ul>
-              <li>Conducted EEG visual-perception experiments on a 23-electrode 10–20 system; performed signal acquisition, artifact removal, and preprocessing.</li>
+              <li>Conducted EEG visual-perception experiments on a 23-electrode 10–20 system;</li>
+              </li>performed signal acquisition and preprocessing of the acquired EEG signals.</li>
             </ul>
           </div>
         </div>
@@ -210,8 +239,18 @@
             <ul>
               <li>Reproduced ThoughtViz, a GAN-based pipeline that reconstructs images from EEG signals.</li>
               <li>Debugged discriminator trainability flag issues causing mode collapse and resolved Keras compatibility issues.</li>
+
             </ul>
           </article>
+          <article class="project-card">
+            <h3>Hodgkin-Huxley Modeling of DBS Electrode Degradation</h3>
+            <span class="project-date">March 2026</span>
+            <ul>
+              <li>Implemented a 4-variable Hodgkin-Huxley neuron model from the governing ODEs, solved numerically via adaptive Runge-Kutta integration.</li>
+              <li>Modeled three electrode corrosion profiles (linear, exponential, sigmoidal) to simulate 24-month DBS current delivery.</li>
+            </ul>
+          </article>
+
           <article class="project-card">
             <h3>IV Fluid Bag Monitoring, Alert and Control System Using Load Cell</h3>
             <span class="project-date">October 2025</span>
@@ -222,52 +261,96 @@
         </div>
       </section>
 
-      <!-- ================= Activities (blog-style posts) ================= -->
+      
+      
+      <!-- ================= Blog & Articles ================= -->
       <!--
-        To add a new post: copy an <article class="post"> block below and edit it.
-        Newest posts go at the top.
+        To add an article: copy an <article class="article"> block and edit the
+        cover image, meta, title, and body. Drop cover images in images/ (SVG,
+        JPG, or PNG all work) and point the <img src> at them. Newest first.
       -->
-      <section id="activities" class="page-section">
-        <h2 class="section-title">Activities</h2>
-        <p class="section-intro">Notes from seminars, workshops, and conferences I've recently attended.</p>
-        <div class="post-list">
+      <!--
+      <section id="blog" class="page-section">
+        <h2 class="section-title">Blog &amp; Articles</h2>
+        <p class="section-intro">Longer writing on the research I work on — signal processing, brain–computer interfaces, and the things I learn while building them.</p>
+        <div class="blog-list">
 
-          <article class="post">
-            <p class="post-meta"><i class="fa-solid fa-calendar-days"></i> June 2026 &middot; <i class="fa-solid fa-location-dot"></i> Neurogati Summer School</p>
-            <h3 class="post-title">A Deep Dive into Computational Neuroscience at Neurogati Summer School 2026</h3>
-            <p>This June I attended the Neurogati Summer School, an intensive program covering core computational neuroscience frameworks across sensory and motor systems, brain dynamics, oculomotor systems, the basal ganglia, and reward-based decision making. The sessions on brain–computer interfaces and non-invasive neuromodulation connected directly to my own EEG research, and I came away with a much clearer picture of how current BCI approaches are grounded in the underlying neural circuitry.</p>
+          <article class="article">
+            <figure class="article-cover">
+              <img src="images/blog-thoughtviz.jpg" alt="Reproducing ThoughtViz" loading="lazy" onerror="this.closest('.article-cover').classList.add('is-empty'); this.remove();">
+              <span class="cover-hint"><i class="fa-solid fa-image"></i> Add your cover image at <code>images/blog-thoughtviz.jpg</code></span>
+            </figure>
+            <p class="post-meta"><i class="fa-solid fa-calendar-days"></i> April 2026 &middot; <i class="fa-solid fa-tag"></i> EEG · GANs</p>
+            <h3 class="post-title">Reproducing ThoughtViz: what breaks when you turn EEG into images</h3>
+            <div class="article-body">
+              <p>ThoughtViz is a GAN pipeline that reconstructs images from EEG signals. I set out to reproduce it, expecting the hard part to be the model. It wasn't. The hard part was a single trainability flag on the discriminator that, left in the wrong state, quietly collapsed every run into the same output no matter what EEG I fed in.</p>
+
+              <p>Mode collapse is easy to name and annoying to catch. The loss curves looked reasonable. The samples did not — the generator had found one image the discriminator couldn't reject and simply stopped exploring. Tracing it back meant reading the Keras training loop carefully enough to see where the discriminator was staying trainable during the generator's turn. Once the flag was fixed, the variety came back.</p>
+
+              <p>The signal itself is the part people underestimate. EEG is noisy, non-stationary, and low on spatial resolution — a handful of channels standing in for millions of neurons. Below is an illustrative slice of what the encoder actually sees: a few channels of raw-looking trace, the kind of input the GAN has to turn into a picture.</p>
+
+              <figure class="eeg-figure">
+                <svg class="eeg-viz" viewBox="0 0 740 320" role="img" aria-label="Illustrative multi-channel EEG traces">
+                  <g class="eeg-grid">
+                    <line x1="48" y1="10" x2="48" y2="290"></line>
+                    <line x1="220" y1="10" x2="220" y2="290"></line>
+                    <line x1="392" y1="10" x2="392" y2="290"></line>
+                    <line x1="564" y1="10" x2="564" y2="290"></line>
+                    <line x1="728" y1="10" x2="728" y2="290"></line>
+                  </g>
+                  <g transform="translate(48,10)">
+                    <text class="eeg-label" x="-40" y="64">Fp1</text>
+                    <text class="eeg-label" x="-36" y="124">Fz</text>
+                    <text class="eeg-label" x="-36" y="184">Cz</text>
+                    <text class="eeg-label" x="-36" y="244">Pz</text>
+                    <polyline class="eeg-trace" points="0,68.9 8,72.7 16,65.4 24,62.9 32,70.7 40,77.0 48,66.6 56,52.5 64,55.0 72,56.7 80,59.8 88,51.5 96,49.2 104,52.2 112,60.8 120,60.3 128,55.3 136,54.7 144,64.9 152,69.4 160,65.4 168,65.2 176,66.2 184,73.5 192,67.3 200,62.4 208,52.3 216,58.0 224,61.8 232,55.7 240,47.7 248,48.7 256,52.3 264,56.2 272,56.8 280,55.1 288,56.3 296,70.2 304,74.8 312,66.2 320,65.9 328,67.7 336,73.2 344,72.9 352,64.1 360,55.4 368,55.8 376,61.7 384,57.6 392,50.1 400,47.6 408,52.8 416,56.3 424,60.0 432,54.9 440,55.4 448,71.5 456,72.6 464,68.9 472,60.8 480,67.9 488,73.0 496,66.3 504,62.2 512,52.1 520,58.5 528,62.6 536,55.3 544,45.1 552,49.0 560,56.2 568,58.3 576,54.4 584,51.8 592,59.3 600,69.5 608,68.3 616,64.8 624,62.2 632,69.1 640,71.5 648,64.9 656,58.7 664,54.8 672,55.2 680,58.5"></polyline>
+                    <polyline class="eeg-trace" points="0,113.2 8,103.0 16,112.2 24,121.8 32,119.1 40,119.1 48,119.0 56,124.1 64,133.9 72,133.0 80,124.4 88,121.7 96,126.7 104,128.6 112,118.8 120,116.0 128,111.9 136,114.6 144,117.6 152,111.3 160,104.1 168,108.7 176,118.0 184,124.5 192,115.6 200,121.9 208,127.0 216,136.7 224,131.8 232,122.2 240,125.7 248,129.1 256,127.9 264,117.1 272,114.6 280,111.6 288,116.9 296,112.6 304,107.4 312,108.0 320,113.6 328,123.9 336,121.5 344,116.4 352,117.9 360,128.4 368,135.9 376,132.7 384,120.7 392,122.4 400,129.4 408,130.0 416,117.4 424,108.8 432,114.1 440,120.0 448,112.2 456,110.9 464,109.4 472,116.8 480,122.8 488,121.1 496,118.6 504,117.5 512,128.6 520,130.4 528,130.1 536,124.9 544,135.5 552,132.1 560,126.2 568,113.7 576,111.2 584,113.8 592,114.1 600,112.0 608,105.8 616,106.8 624,117.1 632,119.5 640,121.2 648,117.2 656,123.5 664,129.9 672,130.6 680,130.6"></polyline>
+                    <polyline class="eeg-trace" points="0,180.2 8,179.8 16,183.2 24,180.7 32,173.6 40,169.3 48,175.2 56,176.6 64,176.0 72,166.2 80,173.8 88,179.4 96,184.4 104,177.3 112,180.9 120,188.7 128,196.5 136,180.1 144,181.1 152,180.6 160,180.0 168,186.3 176,175.8 184,171.9 192,168.3 200,175.5 208,176.4 216,174.0 224,165.4 232,174.0 240,185.8 248,186.6 256,183.0 264,184.6 272,187.5 280,197.0 288,192.7 296,186.3 304,180.1 312,186.4 320,186.0 328,178.4 336,180.2 344,168.0 352,173.4 360,178.1 368,170.2 376,171.9 384,177.2 392,187.2 400,185.1 408,179.6 416,180.6 424,191.0 432,194.7 440,193.5 448,179.4 456,179.8 464,186.6 472,185.4 480,178.1 488,167.0 496,172.3 504,167.3 512,172.3 520,171.9 528,172.4 536,179.9 544,185.1 552,185.2 560,182.5 568,186.0 576,187.7 584,197.0 592,189.4 600,184.5 608,179.3 616,183.2 624,182.3 632,173.3 640,170.8 648,173.3 656,176.9 664,175.0 672,167.6 680,169.1"></polyline>
+                    <polyline class="eeg-trace" points="0,240.0 8,246.0 16,248.1 24,246.4 32,248.0 40,251.2 48,254.6 56,240.8 64,218.6 72,238.0 80,238.3 88,236.0 96,226.9 104,227.1 112,223.1 120,234.7 128,235.1 136,222.3 144,236.7 152,243.8 160,249.8 168,248.1 176,245.5 184,247.8 192,252.1 200,253.0 208,244.6 216,236.4 224,238.1 232,242.8 240,238.2 248,226.6 256,226.2 264,234.8 272,237.8 280,233.0 288,232.0 296,238.1 304,243.1 312,247.7 320,247.3 328,246.0 336,246.6 344,251.5 352,235.2 360,241.5 368,235.7 376,236.3 384,242.1 392,232.2 400,230.0 408,225.5 416,234.5 424,235.0 432,232.7 440,233.1 448,237.8 456,248.6 464,251.6 472,245.3 480,262.0 488,236.1 496,254.6 504,246.6 512,243.9 520,233.6 528,237.6 536,261.5 544,231.0 552,225.5 560,230.8 568,237.5 576,236.4 584,236.7 592,233.3 600,242.1 608,246.1 616,245.7 624,246.8 632,247.1 640,248.0 648,251.3 656,245.2 664,235.8 672,238.3 680,244.1"></polyline>
+                  </g>
+                  <text class="eeg-axis" x="48" y="308">0 s</text>
+                  <text class="eeg-axis" x="672" y="308">4 s</text>
+                </svg>
+                <figcaption>Illustrative EEG traces (four channels of the 10–20 system). Synthetic data, shown to convey what the encoder reads.</figcaption>
+              </figure>
+
+              <p>My takeaway: with generative models on physiological data, the training bugs bite harder than the architecture choices. A clean reproduction is worth as much as a new idea, because it tells you which failures are yours and which belong to the method.</p>
+            </div>
           </article>
 
-          <article class="post">
-            <p class="post-meta"><i class="fa-solid fa-calendar-days"></i> December 2025 &middot; <i class="fa-solid fa-location-dot"></i> NIT Rourkela</p>
-            <h3 class="post-title">AI and Medical Image Informatics for Precision Medicine — a GIAN Course</h3>
-            <p>I took part in a GIAN course at NIT Rourkela on interpretable and generative AI for digital pathology. Over the course we worked through image reconstruction, disease understanding, and — what I found most valuable — the practical considerations of deploying these models in real clinical settings. It sharpened how I think about explainability in my own work on physiological signals.</p>
+          <article class="article">
+            <figure class="article-cover">
+              <img src="images/blog-sleep.jpg" alt="Reading sleep in EEG and ECG" loading="lazy" onerror="this.closest('.article-cover').classList.add('is-empty'); this.remove();">
+              <span class="cover-hint"><i class="fa-solid fa-image"></i> Add your cover image at <code>images/blog-sleep.jpg</code></span>
+            </figure>
+            <p class="post-meta"><i class="fa-solid fa-calendar-days"></i> May 2026 &middot; <i class="fa-solid fa-tag"></i> Sleep · EEG–ECG</p>
+            <h3 class="post-title">Reading sleep in two signals at once</h3>
+            <div class="article-body">
+              <p>My TEEP internship in Taiwan is built around one question: how much do the brain and the heart agree during sleep? Most sleep staging leans on EEG alone. I'm looking at whether the nonlinear coupling between EEG and ECG carries staging information that either signal misses on its own, using synchronized recordings from the MIT-BIH Polysomnographic Database.</p>
+
+              <p>The appeal of a coupling measure is that it doesn't care about absolute amplitude, which drifts between subjects and even across a single night. It asks a narrower question — when one signal moves, how predictably does the other follow — and that relationship seems to shift as sleep deepens. Whether it shifts cleanly enough to stage on is exactly what I'm testing.</p>
+
+              <p>This one is still in progress, so no tidy results yet. I'll write up what the interdependence actually looks like across stages once the analysis holds together.</p>
+            </div>
           </article>
-
-          <article class="post">
-            <p class="post-meta"><i class="fa-solid fa-calendar-days"></i> November 2025 &middot; <i class="fa-solid fa-location-dot"></i> NIT Rourkela</p>
-            <h3 class="post-title">Behind the Scenes at the National Bioengineering Conference</h3>
-            <p>I joined the organizing team for the National Bioengineering Conference at NIT Rourkela, coordinating delegate logistics while also attending the technical sessions. Seeing contemporary bioengineering research presented up close — and helping the event run smoothly at the same time — was a great introduction to how academic conferences come together.</p>
-          </article>
-
-        </div>
-      </section>
-
+        -->
+       
+      
       <!-- ================= Skills ================= -->
       <section id="skills" class="page-section">
         <h2 class="section-title">Skills</h2>
         <div class="skills-grid">
           <div class="skill-group">
             <h3>Programming</h3>
-            <div class="tags"><span class="tag">Python (ML/DL)</span><span class="tag">C</span><span class="tag">C++</span></div>
+            <div class="tags"><span class="tag">Python (ML/DL)</span><span class="tag">MATLAB</span><span class="tag">C</span><span 
           </div>
           <div class="skill-group">
-            <h3>Frameworks</h3>
-            <div class="tags"><span class="tag">PyTorch</span><span class="tag">TensorFlow</span><span class="tag">NumPy</span><span class="tag">Pandas</span><span class="tag">Scikit-learn</span></div>
+            <h3>Frameworks & Libraries</h3>
+            <div class="tags"><span class="tag">PyTorch</span><span class="tag">TensorFlow</span><span class="tag">MNE-Python</span><span class="tag">NumPy</span><span class="tag">Pandas</span><span class="tag">Scikit-learn</span></div>
           </div>
           <div class="skill-group">
             <h3>Instrumentation</h3>
-            <div class="tags"><span class="tag">EEG (RMS)</span><span class="tag">Arduino</span><span class="tag">ESP32</span><span class="tag">3D Printer</span></div>
+            <div class="tags"><span class="tag">EEG (RMS)</span><span class="tag">EMG</span><span class="tag">Arduino</span><span class="tag">ESP32</span><span class="tag">3D Printer</span></div>
           </div>
           <div class="skill-group">
             <h3>Software</h3>
@@ -275,7 +358,7 @@
           </div>
           <div class="skill-group">
             <h3>Languages</h3>
-            <div class="tags"><span class="tag">Bengali (C2)</span><span class="tag">English (C1)</span><span class="tag">Hindi (B1)</span><span class="tag">German (A1)</span><span class="tag">Spanish (A1)</span></div>
+            <div class="tags"><span class="tag">Bengali (C2)</span><span class="tag">English (C1)</span><span class="tag">Hindi (B1)</span><span class="tag">Spanish (A1)</span></div>
           </div>
           <div class="skill-group">
             <h3>Relevant Coursework</h3>
@@ -291,6 +374,12 @@
             <p class="cert-desc">Built a working knowledge of core computational neuroscience frameworks — sensory and motor systems, brain dynamics, oculomotor systems, basal ganglia, and reward-based decision making — along with current approaches in brain-computer interfaces and non-invasive neuromodulation.</p>
           </div>
           <div class="cert-item">
+            <h4 class="cert-name">Fundamentals of Sensors</h4>
+            <p class="cert-org">Indian Institute of Science<span class="cert-date">January 2026</span></p>
+            <p class="cert-desc">Acquired system-level understanding of sensor technologies covering gas, humidity, proximity, and radiation sensors, along with interfacing, packaging, PCB design, and additive manufacturing.</p>
+          </div>
+
+          <div class="cert-item">
             <h4 class="cert-name">AI and Medical Image Informatics for Precision Medicine</h4>
             <p class="cert-org">GIAN course organized by NIT Rourkela <span class="cert-date">December 2025</span></p>
             <p class="cert-desc">Developed conceptual proficiency in interpretable and generative AI for digital pathology, including reconstruction, disease understanding, and clinical deployment considerations.</p>
@@ -302,12 +391,13 @@
           </div>
         </div>
 
+        <section id="activities" class="page-section"></section>
         <h3 class="subsection-title">Leadership &amp; Activities</h3>
         <div class="timeline">
           <div class="timeline-item">
             <span class="timeline-date">June 2026 – Present</span>
             <h3 class="timeline-title">IEEE EMBS Student Branch Chapter, NIT Rourkela</h3>
-            <p class="timeline-meta">Founder &amp; Vice President</p>
+            <p class="timeline-meta">Founder &amp; President</p>
             <ul>
               <li>Led the petition and approval process to establish the chapter; organizing technical workshops and seminars with faculty advisors.</li>
             </ul>
@@ -328,6 +418,24 @@
               <li>Produced science-communication content and coordinated student outreach initiatives.</li>
             </ul>
           </div>
+          <div class="timeline-item">
+            <span class="timeline-date">November 2024</span>
+            <h3 class="timeline-title">INNOVISION- Tech Fest, NIT Rourkela</h3>
+            <p class="timeline-meta">Event Management Coordinator</p>
+            <ul>
+              <li>Managed cross-functional teams and on-ground operations for one of Eastern India's largest student-run tech fests.</li>
+            </ul>
+          </div>
+          <div class="timeline-item">
+            <span class="timeline-date">February 2024 – February 2025</span>
+            <h3 class="timeline-title">Institute Table Tennis Team, NIT Rourkela</h3>
+            <p class="timeline-meta">Team Player</p>
+            <ul>
+              <li>Participated in inter college Table Tennis Tournaments and represented NIT Rourkela</li>
+            </ul>
+          </div>
+
+          
         </div>
 
         <h3 class="subsection-title">Professional Memberships</h3>
@@ -335,8 +443,52 @@
           <li>Student Member, IEEE <span class="membership-date">Dec 2025 – Present</span></li>
           <li>Student Member, IEEE Engineering in Medicine and Biology Society (EMBS) <span class="membership-date">Dec 2025 – Present</span></li>
         </ul>
-      </section>
 
+      </section>
+      <!-- ================= Activities (blog-style posts) ================= -->
+      <!--
+        To add a new post: copy an <article class="post"> block below and edit it.
+        Newest posts go at the top.
+      
+      
+      <section id="events" class="page-section">
+        <h2 class="section-title">Events</h2>-->
+        <!-- <p class="section-intro">Notes from seminars, workshops, and conferences I've recently attended.</p> 
+        <div class="post-list">
+          
+          <article class="post">
+            <figure class="post-figure">
+              <img src="images/activity-neurogati.svg" alt="Neurogati Summer School 2026" loading="lazy" onerror="this.closest('.post-figure').style.display='none'">
+              <figcaption>Neurogati Summer School 2026 — replace this banner with your own photo.</figcaption>
+            </figure>
+            <p class="post-meta"><i class="fa-solid fa-calendar-days"></i> September 2026 &middot; <i class="fa-solid fa-location-dot"></i> Department of Biotechnology and medical engineering,NIT Rourkela</p>
+            <h3 class="post-title">BioInnovation Hackathon 2026</h3>
+            <p>We, a team of four students, participated in this hackathon where we presented our idea on developing a novel approach for a wearable UV-Vis spectrometer.</p>
+          </article>
+        
+          <article class="post">
+            <figure class="post-figure">
+              <img src="images/activity-gian.svg" alt="GIAN course on AI and Medical Image Informatics" loading="lazy" onerror="this.closest('.post-figure').style.display='none'">
+              <figcaption>GIAN course at NIT Rourkela — replace this banner with your own photo.</figcaption>
+            </figure>
+            <p class="post-meta"><i class="fa-solid fa-calendar-days"></i> December 2025 &middot; <i class="fa-solid fa-location-dot"></i> NIT Rourkela</p>
+            <h3 class="post-title">A GIAN course on AI for digital pathology</h3>
+            <p>I took a GIAN course at NIT Rourkela on interpretable and generative AI for digital pathology. We covered image reconstruction and disease understanding, but the part I keep coming back to was the deployment side — what it actually takes to put one of these models in front of a clinician. That framing changed how I think about explainability in my own signal work: a model that can't justify itself doesn't make it to the clinic.</p>
+          </article>
+
+          <article class="post">
+            <figure class="post-figure">
+              <img src="images/activity-conference.svg" alt="National Bioengineering Conference at NIT Rourkela" loading="lazy" onerror="this.closest('.post-figure').style.display='none'">
+              <figcaption>National Bioengineering Conference — replace this banner with your own photo.</figcaption>
+            </figure>
+            <p class="post-meta"><i class="fa-solid fa-calendar-days"></i> November 2025 &middot; <i class="fa-solid fa-location-dot"></i> NIT Rourkela</p>
+            <h3 class="post-title">Behind the scenes at the National Bioengineering Conference</h3>
+            <p>I was on the organizing team for the National Bioengineering Conference at NIT Rourkela, handling delegate logistics and sitting in on the technical sessions when I could. Running an event and attending it at the same time is a strange split, but it taught me how much quiet coordination goes into a conference before anyone walks into the room.</p>
+          </article>
+          
+        </div>
+      </section>
+    -->
       <!-- ================= Contact ================= -->
       <section id="contact" class="page-section">
         <h2 class="section-title">Get in Touch</h2>
@@ -347,11 +499,7 @@
             <span class="contact-label">Email</span>
             <span class="contact-value">ghosemomo@gmail.com</span>
           </a>
-          <a class="contact-card" href="tel:+919234657487">
-            <i class="fa-solid fa-phone contact-icon"></i>
-            <span class="contact-label">Phone</span>
-            <span class="contact-value">(+91) 9234657487</span>
-          </a>
+          
           <a class="contact-card" href="https://www.linkedin.com/in/manaswita-ghose" target="_blank" rel="noopener">
             <i class="fa-brands fa-linkedin contact-icon"></i>
             <span class="contact-label">LinkedIn</span>

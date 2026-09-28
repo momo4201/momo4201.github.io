@@ -206,15 +206,16 @@ img {
   width: 120px;
   height: 120px;
   border-radius: 50%;
+  overflow: hidden;
   background: linear-gradient(135deg, var(--accent), var(--accent-dark));
-  color: #ffffff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 2.4rem;
-  font-weight: 700;
-  letter-spacing: 1px;
   margin-bottom: 1rem;
+}
+
+.author-avatar img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
 }
 
 .author-name {
@@ -569,6 +570,161 @@ img {
 
 .post p:last-child {
   margin-bottom: 0;
+}
+
+/* Figures / images inside posts and articles */
+
+.post-figure,
+.article-cover {
+  margin: 0 0 1rem;
+}
+
+.post-figure img,
+.article-cover img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+}
+
+.post-figure figcaption {
+  font-size: 0.8rem;
+  color: var(--text-light);
+  margin-top: 0.4rem;
+  font-style: italic;
+}
+
+/* --------------------------------------------------------------------------
+   Blog & Articles
+   -------------------------------------------------------------------------- */
+
+.blog-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.article {
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  overflow: hidden;
+  background: var(--card-bg);
+  box-shadow: var(--card-shadow);
+}
+
+.article-cover {
+  margin: 0;
+}
+
+.article-cover img {
+  border: none;
+  border-radius: 0;
+  border-bottom: 1px solid var(--border);
+}
+
+/* Empty cover: a labeled drop-zone shown until a real photo is added */
+
+.cover-hint {
+  display: none;
+}
+
+.article-cover.is-empty {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  aspect-ratio: 2 / 1;
+  background: var(--bg-alt);
+  border-bottom: 1px dashed var(--border);
+}
+
+.article-cover.is-empty .cover-hint {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 1.25rem;
+  text-align: center;
+  color: var(--text-light);
+  font-size: 0.9rem;
+}
+
+.cover-hint i {
+  font-size: 1.9rem;
+  color: var(--accent);
+}
+
+.cover-hint code {
+  background: var(--tag-bg);
+  color: var(--tag-text);
+  padding: 0.15rem 0.45rem;
+  border-radius: 4px;
+  font-size: 0.82rem;
+}
+
+.article .post-meta {
+  margin: 1.2rem 1.4rem 0.4rem;
+}
+
+.article .post-title {
+  margin: 0 1.4rem 0.75rem;
+  font-size: 1.3rem;
+}
+
+.article-body {
+  padding: 0 1.4rem 1.4rem;
+}
+
+.article-body p {
+  margin: 0 0 1rem;
+}
+
+.article-body p:last-child {
+  margin-bottom: 0;
+}
+
+/* Inline EEG visualization (theme-aware) */
+
+.eeg-figure {
+  margin: 1.5rem 0;
+}
+
+.eeg-viz {
+  width: 100%;
+  height: auto;
+  background: var(--bg-alt);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+}
+
+.eeg-grid line {
+  stroke: var(--border);
+  stroke-width: 1;
+}
+
+.eeg-trace {
+  fill: none;
+  stroke: var(--accent);
+  stroke-width: 1.6;
+  stroke-linejoin: round;
+  stroke-linecap: round;
+}
+
+.eeg-label {
+  fill: var(--text-light);
+  font: 600 12px "PT Sans", sans-serif;
+}
+
+.eeg-axis {
+  fill: var(--text-light);
+  font: 11px "PT Sans", sans-serif;
+}
+
+.eeg-figure figcaption {
+  font-size: 0.8rem;
+  color: var(--text-light);
+  margin-top: 0.5rem;
+  font-style: italic;
 }
 
 /* --------------------------------------------------------------------------
